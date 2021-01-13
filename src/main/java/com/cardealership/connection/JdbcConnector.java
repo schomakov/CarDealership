@@ -229,7 +229,7 @@ public class JdbcConnector {
 
         List<String> list = new ArrayList<>();
 
-        Connection connection = getConnection("root", "970322#Sc");
+        Connection connection = getConnection(PROPERTIES.getProperty(DB_USER_KEY), PROPERTIES.getProperty(DB_PASS_KEY));
         Statement stmt = null;
         ResultSet resultSet = null;
 
